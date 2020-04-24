@@ -1,1 +1,1 @@
-# art-news
+# News Culture
