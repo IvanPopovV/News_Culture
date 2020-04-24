@@ -5,17 +5,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Новости культуры</title>
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap&subset=cyrillic" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap&subset=cyrillic" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900&display=swap" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/normalize.css"> 
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="header">
-    <a><img class="header_logo" src="img/art_news_black.svg" alt="логотип Новости культуры"></a>
-    <nav class="nav"> 
-      <ul class="menu">
+    <h1><a href="">Новости культуры</a></h1>
+    <nav> 
+      <ul class="nav">
         <li><a href="#">Новости</a></li>
         <li><a href="#">Обзоры</a></li>
         <li><a href="#">Музыка</a></li>
@@ -30,94 +31,100 @@
   </header>
   <!-- /.header -->
 
-  <main class="main">
-    <section class="promo">
-      <h2>Новое</h2>
-      <a href="#" class="a-block">
-        <div class="promo-link">
-          <img class="promo-logo" src="img/hotel_logo.svg" alt="логотип отеля">
-          <span class="promo-title">Подводный отель</span>
-          <p class="promo-text">
-            Как известно, Дубай – город контрастов. Самые революционные <br>
-            и фантастические мечты архитекторов способен воплотить в жизнь <br>
-            этот мегаполис, построенный на нефти и за счет нефти
-          </p>
-        </div>
-      </a>
+  <main>
+    <section class="main-news">
+      <div class="main-news-wrap">
+        <h2>Новое</h2>
+        <img class="main-news-logo" src="img/hotel_logo.svg" alt="логотип отеля">
+        <span class="main-news-title">Подводный отель</span>
+        <p class="main-news-text">
+          Как известно, Дубай – город контрастов. Самые революционные <br>
+          и фантастические мечты архитекторов способен воплотить в жизнь <br>
+          этот мегаполис, построенный на нефти и за счет нефти
+        </p>
+      </div>
     </section>
-    <!-- /.promo -->
-    <h2>Обзоры</h2>
+    <!-- /.main-news -->
+
+    <h2 class="heading-news">Обзоры</h2>
     <section class="news">
-      <div class="news-card">
-        <a href="" class="a-block">
-          <img class="card-image" src="img/news-1.jpg" alt="news1">
-          <h3 class="card-title">«Шальные годы» Монпарнаса</h3>
-          <p class="card-text">В Музее изобразительных искусств имени Пушкина с 29 сентября по 29 ноября проходит выставка «Шальные годы Монпарнаса»</p>
-        </a>        
+      <div class="news-box">
+        <div class="news-box-image">
+          <img src="img/news-1.jpg" alt="news1">
+        </div>
+        <div class="news-box-text">
+          <a href="#"><h3 class="box-title">«Шальные годы» Монпарнаса</h3></a>
+          <p class="text">В Музее изобразительных искусств имени Пушкина с 29 сентября по 29 ноября проходит выставка «Шальные годы Монпарнаса»</p>
+        </div>
       </div>
 
-      <div class="news-card">
-        <a href="" class="a-block">
-          <img class="card-image" src="img/news-2.png" alt="news2">
-          <h3 class="card-title">Анатомия за 30 секунд</h3>
-          <p class="card-text">Сейчас, когда мир открыт нараспашку для человека и его познавательных изысканий, интерес к научно‑популярной литературе заметно вырос</p>
-        </a>
+      <div class="news-box">
+        <div class="news-box-image">
+          <img src="img/news-2.png" alt="news2">
+        </div>
+        <div class="news-box-text">
+          <a href="#"><h3 class="box-title">Анатомия за 30 секунд</h3></a>
+          <p class="text">Сейчас, когда мир открыт нараспашку для человека и его познавательных изысканий, интерес к научно‑популярной литературе заметно вырос</p>
+        </div>
       </div>
       
-      <div class="news-card">
-        <a href="" class="a-block">
-          <img class="card-image" src="img/news-3.jpg" alt="news3">
-          <h3 class="card-title">Сферические чудаки</h3>
-          <p class="card-text">Корреспондентам «Культурного обозревателя» посчастливилось побывать в театре «Сфера» на премьере спектакля «Чудаки и зануды»</p>
-        </a>
-      </div>
+      <div class="news-box">
+        <div class="news-box-image">
+          <img src="img/news-3.jpg" alt="news3">
+        </div>
+        <div class="news-box-text">
+          <a href="#"><h3 class="box-title">Сферические чудаки</h3></a> 
+          <p class="text">Корреспондентам «Культурного обозревателя» посчастливилось побывать в театре «Сфера» на премьере спектакля «Чудаки и зануды»</p>
+        </div>
+      </div>     
     </section>
     <!-- /.news -->
-    <section class="tickets">
-      <h2>Абонементы в театр</h2>
-      <div class="advantage">
-        <h3>Скидка 50% на весь сезон 2020</h3>
-        <p class="ticket-text">Покупая абонемент на сезон 2020 года вы сэкономите половину стоимости всех спектаклей</p>
-      </div>
-      <div class="advantage">
-        <h3>Места у сцены</h3>
-        <p class="ticket-text">Только для обладателей абонементов будет возможность сесть поближе к сцене</p>
-      </div>
-      <div class="advantage">
-        <h3>Автограф-сессия актёров</h3>
-        <p class="ticket-text">После спектаклей у вас будет возможность пообщаться с актёрами и взять у них автограф</p>
-      </div>
-    </section>
-    <!--подумать-->
-    <button class="button" name="button">
-      <span>Смотреть</span>
-      <img class="arrow" src="img/arrow_forward.svg" alt="стрелка">
-    </button>
-    <!---->
-    <!-- /.tickets -->
+
+    <div class="wrapper">
+      <section class="tickets">
+        <h2 class="heading-tickets">Абонементы в театр</h2>
+        <div class="advantage">
+          <h3><a href="#">Скидка 50% на весь сезон 2020</a></h3>
+          <p class="ticket-text">Покупая абонемент на сезон 2020 года вы сэкономите половину стоимости всех спектаклей</p>
+          <hr class="advantage-line">
+        </div>
+        <div class="advantage">
+          <h3><a href="#">Места у сцены</a></h3>
+          <p class="ticket-text">Только для обладателей абонементов будет возможность сесть поближе к сцене</p>
+          <hr class="advantage-line">
+        </div>
+        <div class="advantage">
+          <h3><a href="#">Автограф-сессия актёров</a></h3>
+          <p class="ticket-text">После спектаклей у вас будет возможность пообщаться с актёрами и взять у них автограф</p>
+        </div>
+        <button class="button" name="button">Смотреть</button>
+      </section>
+      <!-- /.tickets -->
+    </div>
+    <!-- /.wrapper -->
   </main>
 
-  <footer class="footer">
-    <div class="footer-logo">
-      <img src="img/art_news_white.svg" alt="логотип Новости культуры">
-    </div>
-    <ul class="footer-menu">
-      <li><a href="#"></a>Новости</li>
-      <li><a href="#"></a>Обзоры</li>
-      <li><a href="#"></a>Музыка</li>
-      <li><a href="#"></a>Архитектура</li>
-      <li><a href="#"></a>Кино</li>
-      <li><a href="#"></a>Театр</li>
-      <li><a href="#"></a>Литература</li>
-      <li><a href="#"></a>Религия</li>
-      <li><a href="#"></a>Живопись</li>
-    </ul>
-    <hr>
-    <ul class="social-links">
-      <li><a href=""><img src="img/instagram_icon.svg" alt=""></a></li>
-      <li><a href=""><img src="img/facebook_icon.svg" alt=""></a></li>
-      <li><a href=""><img src="img/twitter_icon.svg" alt=""></a></li>
-    </ul>
+  <footer>
+    <div class="footer-box">
+      <a class="footer-link" href="#">Новости культуры</a>
+      <ul class="footer-menu">
+        <li><a href="#">Новости</a></li>
+        <li><a href="#">Обзоры</a></li>
+        <li><a href="#">Музыка</a></li>
+        <li><a href="#">Архитектура</a></li>
+        <li><a href="#">Кино</a></li>
+        <li><a href="#">Театр</a></li>
+        <li><a href="#">Литература</a></li>
+        <li><a href="#">Религия</a></li>
+        <li><a href="#">Живопись</a></li>
+      </ul>
+      <hr class="footer-line">
+      <ul class="socials-links">
+        <li><a href="" target="_blank"><img class="socials-image" src="img/instagram_icon.svg" alt="instagram"></a></li>
+        <li><a href="" target="_blank"><img class="socials-image" src="img/facebook_icon.svg" alt="facebook"></a></li>
+        <li><a href="" target="_blank"><img class="socials-image" src="img/twitter_icon.svg" alt="twitter"></a></li>
+      </ul>
+    </div>  
   </footer>
   <!-- /.footer -->
 </body>
