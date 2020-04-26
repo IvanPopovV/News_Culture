@@ -24,6 +24,10 @@ h1 {
   letter-spacing: 1px;
 }
 
+nav {
+  max-width: 1170px;
+  margin: auto;
+}
 .nav {
   max-width: 1170px;
   margin-left: 0;
@@ -81,7 +85,7 @@ a:hover {
 .main-news-wrap:hover>h2 {
   display: block;
   margin: 0;
-  margin-right: 100%;
+  left: 0;
   padding: 5px 24px;
   background-color: #FF7931;
   font-family: "Raleway", sans-serif;
@@ -136,19 +140,23 @@ a:hover {
 }
 
 .news {
-  max-width: 1170px;
-  margin: auto;
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
+}
+.news-box {
+  width: 31.6666667%;
+}
+
+.news-box-image>img {
+  width: 100%;
 }
 
 .news-box:not(:last-child) {
-  margin-right: 29px;
+  margin-right: 2.5%;
 }
 
 .box-title {
-  font-family: Playfair Display;
+  font-family: "Playfair Display";
   font-weight: 900;
   font-size: 23px;
   line-height: 31px;
