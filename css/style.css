@@ -60,12 +60,13 @@ a:hover {
 }
 
 .main-news {
+  margin: auto;
   max-width: 1440px;
   height: 464px;
-  background: url(../img/underwater_hotel.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  background: url(../img/underwater_hotel.jpg) top center no-repeat;
+  /* background-repeat: no-repeat;
+  background-position: top; */
+  /* background-size: cover; */
 }
 
 .main-news-wrap {
@@ -142,6 +143,8 @@ a:hover {
 .news {
   display: flex;
   align-items: flex-start;
+  margin: auto;
+  max-width: 1170px;
 }
 .news-box {
   width: 31.6666667%;
