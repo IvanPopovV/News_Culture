@@ -10,13 +10,16 @@ body {
 }
 
 .header {
-  max-width: 1170px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding-top: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 h1 {
   text-align: center;
-  margin-top: 60px;
+  margin: 0;
   font-family: "Playfair Display";
   font-weight: 900;
   font-size: 35px;
@@ -26,9 +29,9 @@ h1 {
 
 nav {
   max-width: 1170px;
-  margin: 0 15px;
-  /* margin: auto; */
+  margin: auto;
 }
+
 .nav {
   max-width: 1170px;
   margin-left: 0;
@@ -69,7 +72,9 @@ a:hover {
 
 .main-news-wrap {
   position: relative;
-  max-width: 1170px;
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -127,10 +132,17 @@ a:hover {
   color: #ffffff;
 }
 /* ======================================================= */
+.cont {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  max-width: 1170px;
+  padding-top: 24px;
+}
 .heading-news {
   text-align: center;
-  margin-top: 44px;
-  margin-bottom: 20px;
+  margin: 0;
+  padding: 20px 0;
   font-family: Roboto;
   font-weight: bold;
   font-size: 17px;
@@ -145,7 +157,7 @@ a:hover {
   align-items: flex-start;
   margin: auto;
   padding: 0 15px;
-  max-width: 1170px;
+  max-width: 1200px;
 }
 .news-box {
   width: 31.6666667%;
@@ -188,15 +200,15 @@ a:hover {
 }
 
 .tickets {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: -350px;
+  right: -350px;
   width: 707px;
   height: 707px;
   border-radius: 100%;
@@ -289,17 +301,20 @@ a:hover {
 /* ====================================================== */
 footer {
   background: #575757;
+  display: flex;
+  justify-content: center;
+  border:1px solid red;
 }
 
 .footer-box {
-  max-width: 1170px;
+  width: 1170px;
   margin: 0 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.footer-link {
+.footer-heading {
   text-align: center;
   margin-top: 26px;
   font-family: "Playfair Display";
