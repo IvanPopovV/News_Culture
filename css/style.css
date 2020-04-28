@@ -25,22 +25,29 @@ h1 {
   font-size: 35px;
   line-height: 47px;
   letter-spacing: 1px;
+  color: #000000;
 }
 
 nav {
   max-width: 1170px;
   margin: auto;
+  margin-top: 46px;
+  margin-bottom: 46px;
 }
 
 .nav {
+  overflow: auto;
+  white-space: nowrap;
+
   max-width: 1170px;
-  margin-left: 0;
+  margin: 0;
   padding-left: 0;
+  padding-bottom: 12px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 46px;
-  padding-bottom: 58px;
+
+  /* padding-bottom: 58px; */
   font-family: "Roboto";
   font-weight: normal;
   text-transform: uppercase;
@@ -54,6 +61,12 @@ nav {
   list-style-type: none;
 }
 
+.nav-link {
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+}
+
 a {
   text-decoration: none;
   color: #000000;
@@ -63,6 +76,7 @@ a:hover {
   color: #ff7931;
 }
 /* ================================================================ */
+
 .main-news {
   margin: auto;
   max-width: 1440px;
@@ -303,7 +317,6 @@ footer {
   background: #575757;
   display: flex;
   justify-content: center;
-  border:1px solid red;
 }
 
 .footer-box {
@@ -330,6 +343,7 @@ footer {
   margin-left: 0;
   padding-left: 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin-top: 32px;
@@ -351,6 +365,9 @@ footer {
 .footer-menu>li>a {
   text-decoration: none;
   color: #ffffff;
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
 }
 
 .footer-menu>li>a:hover {
